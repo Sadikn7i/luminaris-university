@@ -1,0 +1,236 @@
+/* ════════════════════════════════════════════
+   ABOUT PAGE STYLES
+   ════════════════════════════════════════════ */
+
+/* ── Page Hero (shared pattern) ── */
+.page-hero {
+  position: relative;
+  height: 72vh;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.page-hero-bg {
+  position: absolute; inset: 0;
+}
+.page-hero-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+.page-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(11,22,40,0.90) 0%,
+    rgba(11,22,40,0.55) 100%
+  );
+}
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+}
+.page-hero-content .tag {
+  color: var(--gold-light);
+  border-color: rgba(201,168,76,0.5);
+  background: rgba(201,168,76,0.08);
+}
+.page-hero-content h1 {
+  color: var(--white);
+  margin: 16px 0 20px;
+}
+.page-hero-content h1 em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+.page-hero-content p {
+  color: rgba(255,255,255,0.68);
+  font-size: 1.05rem;
+  max-width: 520px;
+}
+.page-hero-scroll {
+  position: absolute;
+  bottom: 40px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.page-hero-scroll-line {
+  width: 1px; height: 56px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: float 2s ease-in-out infinite;
+}
+
+/* ── Mission ── */
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.mission-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 48px 36px;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 3px solid var(--gold);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+.mission-icon { font-size: 2.8rem; margin-bottom: 20px; display: block; }
+.mission-card h3 { margin-bottom: 16px; }
+.mission-card .divider { margin-bottom: 16px; }
+.mission-card p { font-size: 0.95rem; }
+
+/* ── Story ── */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.story-text h2 em { font-style: italic; }
+.story-text p { margin-bottom: 16px; }
+.story-img {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 540px;
+}
+.story-img img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ── Timeline ── */
+.timeline {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  transform: translateX(-50%);
+}
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  gap: 0 24px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.timeline-item:nth-child(even) .timeline-year { order: 3; text-align: left; }
+.timeline-item:nth-child(even) .timeline-dot  { order: 2; }
+.timeline-item:nth-child(even) .timeline-content { order: 1; text-align: right; }
+
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-align: right;
+  line-height: 1;
+}
+.timeline-dot {
+  width: 16px; height: 16px;
+  background: var(--gold);
+  border-radius: 50%;
+  border: 3px solid var(--cream);
+  box-shadow: 0 0 0 3px var(--gold);
+  justify-self: center;
+  animation: pulse-gold 2.5s ease-in-out infinite;
+}
+.timeline-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+.timeline-content p { font-size: 0.9rem; }
+
+/* ── Stats Band ── */
+.stats-band { background: var(--navy); }
+.stats-band-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+  text-align: center;
+  padding: 40px 0;
+}
+.stat-item .counter-number { display: block; font-size: 3rem; }
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-top: 8px;
+}
+
+/* ── Leadership ── */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.leader-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.leader-img { height: 260px; overflow: hidden; }
+.leader-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.leader-body { padding: 24px; }
+.leader-body h4 { font-size: 1.1rem; margin-bottom: 4px; }
+.leader-role {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.leader-body p { font-size: 0.85rem; line-height: 1.65; }
+
+/* ── Gallery ── */
+.campus-gallery { overflow: hidden; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 340px;
+}
+.gallery-item { overflow: hidden; }
+.gallery-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+.gallery-item:hover img { transform: scale(1.08); }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .mission-grid { grid-template-columns: 1fr 1fr; }
+  .story-grid { grid-template-columns: 1fr; gap: 48px; }
+  .story-img { height: 380px; }
+  .leadership-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-band-grid { grid-template-columns: repeat(3, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); height: auto; }
+  .gallery-item { height: 220px; }
+}
+@media (max-width: 768px) {
+  .mission-grid { grid-template-columns: 1fr; }
+  .timeline::before { left: 20px; }
+  .timeline-item { grid-template-columns: 40px 1fr; grid-template-rows: auto auto; }
+  .timeline-item .timeline-year { order: 1 !important; grid-column: 2; text-align: left !important; font-size: 1.4rem; }
+  .timeline-item .timeline-dot  { order: 0 !important; grid-row: 1 / 3; align-self: start; margin-top: 4px; }
+  .timeline-item .timeline-content { order: 2 !important; grid-column: 2; text-align: left !important; }
+  .stats-band-grid { grid-template-columns: repeat(2, 1fr); }
+  .leadership-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}

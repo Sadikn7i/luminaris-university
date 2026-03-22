@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academics — Luminaris University</title>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/navbar.css"/>
+  <link rel="stylesheet" href="css/transitions.css"/>
+  <link rel="stylesheet" href="css/pages/academics.css"/>
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ══ PAGE HERO ══ -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1800&q=80" alt="Academics"/>
+      <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container page-hero-content">
+      <div class="tag animate-fade-up">Academic Excellence</div>
+      <h1 class="animate-fade-up delay-200">Programs &amp;<br/><em>Faculties</em></h1>
+      <p class="animate-fade-up delay-300">180+ undergraduate and postgraduate programs spanning eight world-class faculties. Find your calling.</p>
+    </div>
+    <div class="page-hero-scroll"><div class="page-hero-scroll-line"></div></div>
+  </section>
+
+  <!-- ══ SEARCH ══ -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-box reveal">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="programSearch" placeholder="Search programs, faculties, keywords..."/>
+        <select id="levelFilter">
+          <option value="">All Levels</option>
+          <option value="undergraduate">Undergraduate</option>
+          <option value="postgraduate">Postgraduate</option>
+          <option value="phd">PhD / Research</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FACULTIES ══ -->
+  <section class="section faculties-section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="tag reveal">Eight Faculties</div>
+        <h2 class="reveal">World-Class<br/><em>Disciplines</em></h2>
+        <div class="divider divider-center reveal"></div>
+      </div>
+      <div class="faculties-grid">
+
+        <div class="faculty-card reveal card-glow" data-faculty="sciences">
+          <div class="faculty-num">01</div>
+          <div class="faculty-icon">⚗️</div>
+          <h3>Sciences &amp; Engineering</h3>
+          <p>Pushing the frontiers of knowledge through rigorous scientific inquiry, innovative design, and applied research across 42 programs.</p>
+          <div class="faculty-programs">
+            <span>Computer Science</span><span>Civil Engineering</span>
+            <span>Physics</span><span>Chemistry</span><span>+38 more</span>
+          </div>
+          <a href="#" class="faculty-link btn btn-outline">View Programs →</a>
+        </div>
+
+        <div class="faculty-card reveal card-glow" data-faculty="business">
+          <div class="faculty-num">02</div>
+          <div class="faculty-icon">💼</div>
+          <h3>Business &amp; Economics</h3>
+          <p>Cultivating visionary business leaders, economists, and entrepreneurs ready for the complexities of the global marketplace.</p>
+          <div class="faculty-programs">
+            <span>MBA</span><span>Finance</span>
+            <span>Marketing</span><span>Economics</span><span>+24 more</span>
+          </div>
+          <a href="#" class="faculty-link btn btn-outline">View Programs →</a>
+        </div>
+
+        <div class="faculty-card reveal card-glow" data-faculty="arts">
+          <div class="faculty-num">03</div>
+          <div class="faculty-icon">🎨</div>
+          <h3>Arts &amp; Humanities</h3>
+          <p>Exploring the depth of human experience through literature, philosophy, history, fine arts, music, and cultural studies.</p>
+          <div class="faculty-programs">
+            <span>Philosophy</span><span>Fine Arts</span>
+            <span>Architecture</span><span>History</span><span>+32 more</span>
+          </div>
+          <a href="#" class="faculty-link btn btn-outline">View Programs →</a>
+        </div>
+
+        <div class="faculty-card reveal card-glow" data-faculty="medicine">
+          <div class="faculty-num">04</div>
+          <div class="faculty-icon">⚕️</div>
+          <h3>Medicine &amp; Health</h3>
+          <p>Training compassionate, skilled healthcare professionals and researchers who improve lives and advance medical science globally.</p>
+          <div class="faculty-programs">
+            <span>Medicine</span><span>Nursing</span>
+            <span>Pharmacy</span><span>Public Health</span><span>+20 more</span>
+          </div>
+          <a href="#" class="faculty-link btn btn-outline">View Programs →</a>
+        </div>
+
+        <div class="faculty-card reveal card-glow" data-faculty="law">
+          <div class="faculty-num">05</div>
+          <div class="faculty-icon">⚖️</div>
+          <h3>Law &amp; Social Sciences</h3>
+          <p>Preparing advocates, policymakers, and social scientists to navigate and shape the systems that govern our world.</p>
+          <div class="faculty-programs">
+            <span>International Law</span><span>Political Science</span>
+            <span>Sociology</span><span>Psychology</span><span>+28 more</span>
+          </div>
+          <a href="#" class="faculty-link btn btn-outline">View Programs →</a>
+        </div>
+
+        <div class="faculty-card reveal card-glow" data-faculty="technology">
+          <div class="faculty-num">06</div>
+          <div class="faculty-icon">💻</div>
+          <h3>Technology &amp; AI</h3>
+          <p>At the forefront of the digital revolution — from machine learning and robotics to cybersecurity and quantum computing.</p>
+          <div class="faculty-programs">
+            <span>Artificial Intelligence</span><span>Data Science</span>
+            <span>Cybersecurity</span><span>Robotics</span><span>+14 more</span>
+          </div>
+          <a href="#" class="faculty-link btn btn-outline">View Programs →</a>
+        </div>
+
+        <div class="faculty-card reveal card-glow" data-faculty="environment">
+          <div class="faculty-num">07</div>
+          <div class="faculty-icon">🌿</div>
+          <h3>Environment &amp; Sustainability</h3>
+          <p>Addressing the defining challenge of our era — climate, ecology, sustainability, and the future of our planet.</p>
+          <div class="faculty-programs">
+            <span>Environmental Science</span><span>Climate Policy</span>
+            <span>Ecology</span><span>Renewable Energy</span><span>+12 more</span>
+          </div>
+          <a href="#" class="faculty-link btn btn-outline">View Programs →</a>
+        </div>
+
+        <div class="faculty-card reveal card-glow" data-faculty="education">
+          <div class="faculty-num">08</div>
+          <div class="faculty-icon">📚</div>
+          <h3>Education &amp; Leadership</h3>
+          <p>Shaping the educators, school leaders, and public administrators who will build stronger societies for generations to come.</p>
+          <div class="faculty-programs">
+            <span>Education Policy</span><span>Pedagogy</span>
+            <span>Leadership Studies</span><span>Curriculum Design</span><span>+10 more</span>
+          </div>
+          <a href="#" class="faculty-link btn btn-outline">View Programs →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHY LUMINARIS ══ -->
+  <section class="section why-section bg-navy">
+    <div class="container">
+      <div class="section-header center">
+        <div class="tag reveal" style="color:var(--gold);border-color:var(--gold);">Why Choose Us</div>
+        <h2 class="reveal" style="color:var(--white);">The Luminaris<br/><em class="shimmer-text">Difference</em></h2>
+        <div class="divider divider-center reveal"></div>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-icon">🏆</div>
+          <h4>Top 50 Globally</h4>
+          <p>Consistently ranked among the world's top universities for academic quality, research output, and graduate employability.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">🌍</div>
+          <h4>Global Network</h4>
+          <p>130+ partner universities worldwide, international exchange programs in 60 countries, and a thriving global alumni community.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">🔬</div>
+          <h4>Research-Led Teaching</h4>
+          <p>Every program is shaped by cutting-edge research. Learn from professors who are actively advancing their fields.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">💡</div>
+          <h4>Innovation Ecosystem</h4>
+          <p>Access to the $200M Innovation Hub, 12 specialised labs, startup incubator, and direct industry partnerships.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">📈</div>
+          <h4>97% Employment Rate</h4>
+          <p>Our graduates are among the most sought-after in the world, with 97% employed within 6 months of graduation.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">🎓</div>
+          <h4>Generous Scholarships</h4>
+          <p>Over £50M awarded annually in scholarships, bursaries, and financial aid to students from all backgrounds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FEATURED FACULTY ══ -->
+  <section class="section featured-faculty">
+    <div class="container">
+      <div class="section-header center">
+        <div class="tag reveal">Meet the Professors</div>
+        <h2 class="reveal">Taught by the<br/><em>World's Best</em></h2>
+        <div class="divider divider-center reveal"></div>
+      </div>
+      <div class="faculty-profiles">
+        <div class="faculty-profile reveal hover-lift">
+          <div class="fp-img img-zoom-wrapper">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b9e77b37?w=400&q=80" alt="Professor"/>
+          </div>
+          <div class="fp-body">
+            <h4>Prof. Sarah Chen</h4>
+            <span class="fp-dept">Artificial Intelligence</span>
+            <p>MIT PhD, former Google DeepMind researcher, author of "The Conscious Machine." Teaching AI Ethics &amp; Neural Networks.</p>
+          </div>
+        </div>
+        <div class="faculty-profile reveal hover-lift">
+          <div class="fp-img img-zoom-wrapper">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Professor"/>
+          </div>
+          <div class="fp-body">
+            <h4>Prof. Marcus Webb</h4>
+            <span class="fp-dept">Economics</span>
+            <p>Oxford DPhil, former World Bank advisor, Nobel Prize shortlist 2022. Teaching Macroeconomics &amp; Development Finance.</p>
+          </div>
+        </div>
+        <div class="faculty-profile reveal hover-lift">
+          <div class="fp-img img-zoom-wrapper">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80" alt="Professor"/>
+          </div>
+          <div class="fp-body">
+            <h4>Dr. Amara Diallo</h4>
+            <span class="fp-dept">Environmental Science</span>
+            <p>UN Climate Panel contributor, pioneer in carbon capture technology, recipient of the Global Green Award 2023.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/pages/academics.js"></script>
+</body>
+</html>

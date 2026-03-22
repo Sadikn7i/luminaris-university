@@ -1,0 +1,227 @@
+/* ════════════════════════════════════════════
+   CAMPUS LIFE PAGE STYLES
+   ════════════════════════════════════════════ */
+
+/* ── Life Stats ── */
+.life-stats { background: var(--navy); }
+.life-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+  text-align: center;
+  padding: 24px 0;
+}
+.life-stat .counter-number { display: block; font-size: 2.8rem; }
+.life-stat span:last-child {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-top: 6px;
+}
+
+/* ── Clubs ── */
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.club-category {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+}
+.club-cat-img { height: 100%; min-height: 200px; overflow: hidden; }
+.club-cat-img img { width: 100%; height: 100%; object-fit: cover; }
+.club-cat-body { padding: 32px 28px; }
+.club-cat-icon { font-size: 2rem; display: block; margin-bottom: 12px; }
+.club-cat-body h4 { font-size: 1.2rem; margin-bottom: 10px; }
+.club-cat-body p { font-size: 0.88rem; line-height: 1.65; margin-bottom: 16px; }
+.club-count {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── Events ── */
+.events-section { background: var(--navy); }
+.events-list { display: flex; flex-direction: column; gap: 20px; }
+.event-item {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 32px;
+  align-items: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,168,76,0.12);
+  border-radius: var(--radius-md);
+  padding: 28px 36px;
+  transition: all 0.35s var(--ease);
+}
+.event-item:hover {
+  background: rgba(201,168,76,0.06);
+  border-color: rgba(201,168,76,0.3);
+  transform: translateX(8px);
+}
+.event-date {
+  text-align: center;
+  border-right: 1px solid rgba(201,168,76,0.2);
+  padding-right: 32px;
+}
+.event-day {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+}
+.event-month {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  display: block;
+  margin-top: 4px;
+}
+.event-type {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.event-body h4 { color: var(--white); font-size: 1.1rem; margin-bottom: 8px; }
+.event-body p  { color: rgba(255,255,255,0.5); font-size: 0.88rem; line-height: 1.6; }
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.event-meta span {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  white-space: nowrap;
+}
+
+/* ── Housing ── */
+.housing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.housing-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.housing-img { height: 220px; overflow: hidden; }
+.housing-img img { width: 100%; height: 100%; object-fit: cover; }
+.housing-body { padding: 28px; }
+.housing-price {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+.housing-body h4 { font-size: 1.1rem; margin-bottom: 4px; }
+.housing-type {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 12px;
+}
+.housing-body p { font-size: 0.88rem; line-height: 1.65; margin-bottom: 16px; }
+.housing-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.housing-features span {
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  background: var(--cream);
+  border-radius: 100px;
+  color: var(--text-mid);
+}
+
+/* ── Testimonials ── */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid var(--gold);
+  position: relative;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+.testimonial-quote {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: var(--gold);
+  opacity: 0.25;
+  line-height: 0.8;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.testimonial-card p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: 28px;
+  color: var(--text-mid);
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.testimonial-author img {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial-author h5 { font-size: 0.95rem; margin-bottom: 2px; }
+.testimonial-author span { font-size: 0.75rem; color: var(--gray); }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .clubs-grid { grid-template-columns: 1fr; }
+  .housing-grid { grid-template-columns: repeat(2,1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2,1fr); }
+  .life-stats-grid { grid-template-columns: repeat(3,1fr); }
+}
+@media (max-width: 768px) {
+  .club-category { grid-template-columns: 1fr; }
+  .club-cat-img  { height: 200px; }
+  .event-item { grid-template-columns: 1fr; gap: 16px; }
+  .event-date { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.2); padding: 0 0 16px; text-align: left; }
+  .event-meta { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+  .housing-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .life-stats-grid { grid-template-columns: repeat(2,1fr); }
+}
