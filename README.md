@@ -2,7 +2,7 @@
 
 <img src="demopics/homepage.png" alt="Luminaris University" width="100%"/>
 
-# Luminaris University
+
 
 ### A Modern Full-Stack University Website
 
