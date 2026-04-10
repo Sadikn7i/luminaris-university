@@ -1,7 +1,9 @@
 <div align="center">
 
 <img src="demopics/homepage.png" alt="Luminaris University" width="100%"/>
+# Luminaris University
 
+### A Modern Full-Stack University Website
 
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
